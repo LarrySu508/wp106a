@@ -38,6 +38,7 @@ const template = [
           fs.writeFile(fileName, text.value)
         }
       }
+      {label: 'Exit',role:'close'}  
     ]
   },
   {

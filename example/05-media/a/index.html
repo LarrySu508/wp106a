@@ -17,12 +17,13 @@ function OpenFile() {
             return
         }
         var filePath = document.getElementById('filePath') 
-        filePath.innerText = fileName
+        filePath.innerText = fileName[0]
         var videoControl = document.getElementById('videoControl')
-        videoControl.setAttribute("src", fileName)
+        videoControl.setAttribute("src", fileName[0])  
+        console.log('fileName[0]=' , fileName[0])
       }
     )
-  console.log('file=' , file)
+
 }
 </script>
   <button onclick="OpenFile()">OpenFile</button>
