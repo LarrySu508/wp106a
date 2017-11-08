@@ -37,18 +37,8 @@ const template = [
           var text = document.getElementById('text')
           fs.writeFile(fileName, text.value)
         }
-      },
-      {label: 'Exit',role:'close'},
-      { type: 'separator' },
-      {
-        label: 'Open New File'
-        
-
-      },
-      {
-        label: 'Save As...'
-
-      }
+      }, 
+      { label: 'Exit', role: 'close' }
     ]
   },
   {
